@@ -14,16 +14,17 @@ import Lista from "./Lista";
 export default function Financas() {
     const {
         data, alterarData, alterarExibicao, tipoExibicao,
-        transacoes, transacao, selecionar, salvar, excluir
+        transacoes, transacao, selecionar, salvar, excluir, saldo
     } = useTransacao()
 
     function renderizarControles() {
         return (
-            <div className="flex justify-between">
+            <div className="flex items-center justify-between">
                 <CampoMesAno
                     data={data}
                     dataMudou={alterarData}
                 />
+                <span>Saldo: { saldo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) }</span>
                 <div className="flex gap-5">
                     <Button
                         className="bg-blue-500"

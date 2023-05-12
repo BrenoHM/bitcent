@@ -12,7 +12,7 @@ interface GradeProps {
 export default function Grade(props: GradeProps) {
     function renderizarItem(transacao: Transacao) {
         return (
-            <div className={`
+            <div key={transacao.id} className={`
                 relative flex flex-col justify-between rounded-lg p-4 
                 text-white overflow-hidden h-24 cursor-pointer
             `} onClick={() => props.selecionarTransacao?.(transacao)}>

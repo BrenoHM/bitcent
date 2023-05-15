@@ -66,7 +66,7 @@ export default function Slogan() {
                     </span>
                     <IconArrowRight className="hidden lg:inline" stroke={1} />
                 </div>
-                <div
+                {/* <div
                     className={`
                     flex items-center gap-2 cursor-pointer
                     text-zinc-300 px-5 py-2.5
@@ -76,7 +76,7 @@ export default function Slogan() {
                     <span className="font-thin md:text-sm text-base">
                         <span className="hidden sm:inline">Assista o</span> Vídeo
                     </span>
-                </div>
+                </div> */}
             </div>
         </div>
     )
